@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <fieldset>
+    <legend> Controller: <%= params[:controller] %>, Action: <%= params[:action] %> </legend>
     <%= yield %>
+    </fieldset>
   </body>
 </html>
