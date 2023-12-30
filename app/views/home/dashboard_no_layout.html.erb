@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InOut - home.html.erb</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <style>
+    .nav-bar ul {
+      display: inline-block;
+    }
+
+    .nav-bar ul li {
+      float: left;
+      width: 120px;
+      background-color: pink;
+      border: 1px solid #abcdef;
+    }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+    <h2>Dashboard no layout</h2>
+
+      <legend> Controller: <%= params[:controller] %>, Action: <%= params[:action] %> </legend>
+      <%= link_to "New Product", products_new_path %>
+    </fieldset>
+    <div class="nav-bar">
+      <ul>
+        <li>Ha</li>
+        <li>He</li>
+        <li>Hi</li>
+        <li>Ho</li>
+        <li>Hu</li>
+      </ul>
+    </div>
+
+  </body>
+</html>
